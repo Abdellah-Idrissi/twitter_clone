@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .user {
+    @apply w-[40px] h-[40px] rounded-full cursor-pointer;
+  }
+
+  .navIcon {
+    @apply text-[20px] hover:text-main transition-all duration-300 cursor-pointer;
+  }
+
+  .dot {
+    @apply w-[5px] h-[5px] bg-black rounded-full group-hover:bg-main transition-all duration-300;
+  }
+
+  .scrollbar {
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: theme(colors.gray.300);
+      @apply dark:bg-[#38444D] 
+    }
+  }
+
+  .uploadIcon {
+    @apply text-main text-[22px] cursor-pointer;
+  }
+
+  .interActive {
+    @apply flex items-center gap-x-1 cursor-pointer;
+  }
+
+  .interActiveIcon {
+    @apply transition-all duration-300;
+  }
+
+  .loader {
+    @apply before:content-[''] before:h-[30px] before:w-[30px] before:-top-[4px] before:-left-[3px]  before:bg-transparent before:border-blue-200 before:animate-spin before:absolute before:border-[4px] before:border-r-blue-400 before:rounded-full;
+  }
+
+}
+
+.headShadow {
+  @apply shadow-md dark:shadow-lg;
+}
+
+@media (max-width: 380px) {
+  .userInfo {
+    @apply flex-col items-start;
+  }
+}

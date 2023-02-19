@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/afb218a83d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/output.css">
+
+</head>
+
+<body class="dark:bg-[#15202B] transition-all duration-500">
+
+  <main class="container  max-h-screen xl:max-w-[1220px] flex justify-center">
+
+    <aside class="flex  flex-col h-screen justify-between p-[13px] xl:min-w-[230px] xl:p-[20px]">
+      <div class="-mt-3">
+        <i class="ri-twitter-fill text-[45px] text-center text-main xl:text-[60px]"></i>
+
+        <ul class="flex flex-col gap-y-4   mt-3 items-center xl:items-start xl:gap-y-6">
+          <li class="dark:text-white cursor-pointer flex flex-row-reverse items-center gap-x-3 group "><span class="hidden group-hover:text-main duration-300 xl:block capitalize font-bold">home</span> <i class="ri-home-4-fill group-hover:text-main duration-300 navIcon text-[22px]"></i> </li>
+          <li class="dark:text-white cursor-pointer flex flex-row-reverse items-center gap-x-3 group"><span class="hidden xl:block capitalize font-bold group-hover:text-main duration-300">explore</span> <i class="ri-hashtag navIcon text-[22px] group-hover:text-main duration-300"></i> </li>
+          <li class="dark:text-white cursor-pointer flex flex-row-reverse items-center gap-x-3 group"><span class="hidden xl:block capitalize font-bold group-hover:text-main duration-300">notifications</span> <i class="ri-notification-3-fill navIcon text-[22px] group-hover:text-main duration-300"></i> </li>
+          <li class="dark:text-white cursor-pointer flex flex-row-reverse items-center gap-x-3 group"><span class="hidden xl:block capitalize font-bold group-hover:text-main duration-300">Messages</span> <i class="ri-mail-fill navIcon text-[22px] group-hover:text-main duration-300"></i> </li>
+          <li class="dark:text-white cursor-pointer flex flex-row-reverse items-center gap-x-3 group"><span class="hidden xl:block capitalize font-bold group-hover:text-main duration-300">bookmars</span> <i class="ri-bookmark-fill navIcon text-[22px] group-hover:text-main duration-300"></i> </li>
+          <li class="dark:text-white cursor-pointer flex flex-row-reverse items-center gap-x-3 group"><span class="hidden xl:block capitalize font-bold group-hover:text-main duration-300">lists</span> <i class="ri-list-unordered navIcon text-[22px] group-hover:text-main duration-300"></i> </li>
+          <li class="dark:text-white cursor-pointer flex flex-row-reverse items-center gap-x-3 group"><span class="hidden xl:block capitalize font-bold group-hover:text-main duration-300">lists</span> <i class="ri-user-fill navIcon text-[22px] group-hover:text-main duration-300"></i> </li>
+
+          <li class="group cursor-pointer flex flex-row-reverse items-center gap-x-3 group dark:text-white">
+            <span class="hidden xl:block capitalize font-bold group-hover:text-main duration-300">more</span> 
+            <div class="w-[20px] h-[20px] flex gap-[2px] items-center relative xl:top-[1px] group-hover:text-main duration-300">
+              <span class="dot dark:bg-white"></span>
+              <span class="dot dark:bg-white"></span>
+              <span class="dot dark:bg-white"></span>
+            </div> 
+          </li>
+
+        </ul>
+
+        <div class="block mx-auto mt-12">
+          <div class="hidden xl:block capitalize font-[600] w-full bg-main text-center text-white text-[18px] py-2 rounded-full cursor-pointer">tweet</div>
+          <div class="w-[40px] mx-auto xl:hidden  h-[40px] bg-main rounded-full flex items-center justify-center">
+            <i class="fa-solid fa-feather text-[20px] text-white"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="xl:flex gap-x-2 items-center cursor-pointer">
+        <img src="./imgs/profile.png" class="user" alt="">
+        <div class="hidden xl:block">
+          <p class="text-[14px] font-bold dark:text-white">Abdellah</p>
+          <p class="text-[14px] text-gray-500 dark:text-gray-400">@abdellahIdrissi</p>
+        </div>
+        <i class="ri-arrow-drop-down-line hidden xl:block dark:text-white text-[25px] text-gray-500 ml-2"></i>
+      </div>
+
+    </aside>
+
+
+    <div class=" overflow-y-scroll relative scroller scrollbar ">
+      <div class=" border-[#E5E7EB] transition-all duration-500 border mr-[2px] dark:border-[#38444D] dark:divide-[#38444D] divide-y-[2px]">
+
+        <div class="sticky dark:bg-[#15202B] transition-all duration-500 head flex z-50 bg-white top-0 inset-x-0 justify-between items-center px-4 py-2">
+          <span class="capitalize font-[600] dark:text-white">home</span>
+          <i class="ri-twitter-fill text-[22px] text-main"></i>
+        </div>
+
+        <div class="p-4">
+          <div class="flex gap-x-2 mb-[80px]">
+            <img src="./imgs/profile.png" class="user" alt="">
+            <input type="text" placeholder="What's happening?" class=" grow outline-none transition-all duration-500 dark:bg-[#15202B] dark:caret-white">
+          </div>
+
+          <div class="flex items-center justify-between">
+            <div class="flex gap-x-[5px]">
+              <i class="ri-image-fill uploadIcon"></i>
+              <i class="ri-image-fill uploadIcon"></i>
+              <i class="ri-image-fill uploadIcon"></i>
+              <i class="ri-image-fill uploadIcon"></i>
+              <i class="ri-image-fill uploadIcon"></i>
+            </div>
+
+            <button class="capitalize bg-main text-white rounded-full font-[600] py-2 px-4">tweet</button>
+          </div>
+        </div>
+  
+        <p class="p-4 text-center text-main cursor-pointer capitalize text-[14px]">show 9 tweets</p>
+
+        <div class="p-4">
+          <div class="flex items-center gap-x-1 mb-3 cursor-pointer ">
+            <img src="./imgs/profile.png" class="user mr-1 " alt="">
+            <div class="flex gap-x-1 items-center  userInfo">
+              <p class="font-[600] dark:text-white">Abdellah</p>
+              <p class="font-[500] text-[14.2px] text-gray-400">@abdellahIdrissi . Feb 2</p>
+            </div>
+          </div>
+  
+
+          <div class="font-[500] xl:pl-[46px]">
+            <p class="dark:text-white">Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p>
+            <p class="my-2 dark:text-white">Experience is the name everyone gives to their <span class="text-main">#mistakes</span></p>
+            <p class="mb-2 dark:text-white">Simplicity is the soul of efficiency.</p>
+            <img src="./imgs/post.jpg" alt="" class="rounded-xl">
+            <p class="font-[400] mt-2 flex justify-between items-center">
+              <span class="interActive group"><i class="ri-chat-3-fill interActiveIcon dark:text-white group-hover:text-main"></i> <span class="font-[600] group-hover:text-main transition-all dark:text-white duration-300 text-[13px]">13.07k</span></span>
+              <span class="interActive group" ><i class="fa-solid fa-retweet interActiveIcon dark:text-white group-hover:text-green-500"></i> <span class="font-[600] transition-all duration-300 dark:text-white text-[13px] group-hover:text-green-500">14k</span></span>
+              <span class="interActive group" ><i class="ri-heart-fill interActiveIcon dark:text-white group-hover:text-red-600"></i> <span class="font-[600] group-hover:text-red-600 dark:text-white transition-all duration-300 text-[13px]">14k</span></span>
+              <span class="interActive group" ><i class="ri-share-forward-fill interActiveIcon dark:text-white group-hover:text-main"></i></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="p-1"></div>
+
+        <div class="flex flex-col justify-center text-center p-5 gap-y-3 ">
+          <p class="font-[700] capitalize text-2xl dark:text-white">Customize your view</p>
+          <p class="text-gray-500 text-sm leading-relaxed dark:text-gray-400">Manage your font size, color and background. These settings affect all the Twitter accounts on this browser.</p>
+          <button class="btn">
+            <span class="hidden xl:block bg-main text-white w-fit mx-auto px-6 font-[600] py-2 rounded-full">Toggle Dark Mode</span>
+            <div class="w-[40px] xl:hidden h-[40px] bg-main flex justify-center items-center rounded-full mx-auto"><i class="ri-moon-fill text-[20px] text-white"></i></div>
+          </button>
+        </div>
+
+        <div class="p-1"></div>
+  
+        <div class="p-5">
+          <div class="loader relative w-[30px] h-[30px] rounded-full bg-transparent mx-auto border-[4px] border-blue-400/40"></div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="hidden xl:block min-w-[360px] p-[10px]">
+      <div class="bg-gray-200 transition-all duration-500 dark:bg-[#253341] p-[6px] rounded-full px-3 flex items-center">
+        <i class="ri-search-line font-[600] text-gray-600"></i>
+        <input type="text" placeholder="Search Twitter" class="dark:bg-[#253341] transition-all duration-500 dark:caret-white bg-gray-200 indent-2 grow outline-none placeholder:text-[14px]">
+      </div>
+
+      <div class="bg-gray-100/80 transition-all duration-500 dark:bg-[#192734] rounded-xl my-[10px] dark:divide-[#38444D] divide-y">
+        <div class="font-bold p-[15px] dark:text-white">What’s happening</div>
+        <div class="p-[13px] py-[9px]">
+          <p class="font-bold dark:text-white">#Morocco</p>
+          <p class="text-[11px] text-gray-500 dark:text-gray-400 pl-[1px]">29.7K Tweets</p>
+        </div>
+        <div class="p-[13px] py-[9px]">
+          <p class="font-bold dark:text-white">#Wydad</p>
+          <p class="text-[11px] text-gray-500 dark:text-gray-400 pl-[1px]">50.6K Tweets</p>
+        </div>
+        <div class="p-[13px] py-[9px]">
+          <p class="font-bold dark:text-white">#Programming</p>
+          <p class="text-[11px] text-gray-500 dark:text-gray-400 pl-[1px]">30.5K Tweets</span>
+        </div>
+        <div class="p-[13px] py-[9px] text-main cursor-pointer">
+          Show More
+        </div>
+      </div>
+
+      <div class="bg-gray-100/80 transition-all duration-500 dark:bg-[#192734] rounded-xl dark:divide-[#38444D] divide-y">
+        <div class="p-[13px] capitalize font-bold dark:text-white">who to follow</div>
+
+        <div class="p-[13px] flex gap-x-2 items-center ">
+          <img src="./imgs/profile.png" class="user" alt="">
+          <div class="text-[14px] grow">
+            <p class="font-bold dark:text-white">Abdellah</p>
+            <p class="text-gray-500 dark:text-gray-400">@abdellahIdrissi</p>
+          </div>
+          <button class="text-[12px] font-[600] text-main border-[2px] border-main rounded-full px-4 py-1">Follow</button>
+        </div>
+
+        <div class="p-[13px] flex gap-x-2 items-center ">
+          <img src="./imgs/profile.png" class="user" alt="">
+          <div class="text-[14px] grow">
+            <p class="font-bold dark:text-white">Abdellah</p>
+            <p class="text-gray-500 dark:text-gray-400">@abdellahIdrissi</p>
+          </div>
+          <button class="text-[12px] font-[600] text-main border-[2px] border-main rounded-full px-4 py-1">Follow</button>
+        </div>
+
+
+        <div class="p-[16px] px-[13px] flex gap-x-3">
+          <div class="bg-gray-300 w-[40px] h-[40px] rounded-full animate-pulse "></div>
+          <div class="grow">
+            <div class="w-[80%] bg-gray-300 h-[15px] rounded-[4px] animate-pulse"></div>
+            <div class="w-[70%] bg-gray-300 h-[15px] rounded-[4px] animate-pulse my-[6px]"></div>
+            <div class="w-[60%] bg-gray-300 h-[15px] rounded-[4px] animate-pulse"></div>
+          </div>
+        </div>
+
+        <div class="p-[13px] text-main cursor-pointer">Show More</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
